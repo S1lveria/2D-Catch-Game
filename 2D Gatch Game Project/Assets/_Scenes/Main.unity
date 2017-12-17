@@ -491,6 +491,7 @@ GameObject:
   - component: {fileID: 1887978905}
   - component: {fileID: 1887978904}
   - component: {fileID: 1887978906}
+  - component: {fileID: 1887978907}
   m_Layer: 0
   m_Name: Hat
   m_TagString: Untagged
@@ -574,6 +575,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1887978907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1887978903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a070f498179f42f44ab2f7808de5da01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
 --- !u!1 &1958455090
 GameObject:
   m_ObjectHideFlags: 0
