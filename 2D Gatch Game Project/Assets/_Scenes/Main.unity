@@ -137,6 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
   ball: {fileID: 1879523989997588, guid: 523fb7017cc73f347b6b54884d6098a3, type: 2}
+  timeLeft: 10
 --- !u!4 &46876613
 Transform:
   m_ObjectHideFlags: 0
