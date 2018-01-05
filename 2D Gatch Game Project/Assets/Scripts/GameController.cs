@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
 	public Camera cam;
 	public GameObject ball;
 	public float timeLeft;
+	public Text timerText;
 	private float maxWidth;
 
 	void Start ()
@@ -20,11 +22,17 @@ public class GameController : MonoBehaviour
 		float ballWidth = ball.GetComponent<Renderer>().bounds.extents.x;
 		maxWidth = targetWidth.x - ballWidth;
 		StartCoroutine (Spawn());
+		UpdateText();
 	}
 
 	void FixedUpdate()
 	{
 		timeLeft -= Time.deltaTime;
+		if(timeLeft < 0)
+		{
+			timeLeft = 0;
+		}
+		UpdateText();
 	}
 	IEnumerator Spawn()
 	{
@@ -36,5 +44,10 @@ public class GameController : MonoBehaviour
 			Instantiate(ball, spawnPosition, spawnRotation);
 			yield return new WaitForSeconds(Random.Range(1.0f, 2.0f)); //wait betwee 1-2 seconds and do the loop again
 		}
+	}
+
+	void UpdateText()
+	{
+		timerText.text = "Time Left:\n" + Mathf.RoundToInt(timeLeft);
 	}
 }
