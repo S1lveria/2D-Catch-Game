@@ -139,6 +139,8 @@ MonoBehaviour:
   ball: {fileID: 1879523989997588, guid: 523fb7017cc73f347b6b54884d6098a3, type: 2}
   timeLeft: 10
   timerText: {fileID: 330765201}
+  gameOvertext: {fileID: 1054088039}
+  restartButton: {fileID: 484333824}
 --- !u!4 &46876613
 Transform:
   m_ObjectHideFlags: 0
@@ -146,7 +148,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 46876611}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: 0}
+  m_LocalPosition: {x: 0, y: 9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -246,7 +248,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &484333825
 RectTransform:
   m_ObjectHideFlags: 0
@@ -538,7 +540,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1054088040
 RectTransform:
   m_ObjectHideFlags: 0
