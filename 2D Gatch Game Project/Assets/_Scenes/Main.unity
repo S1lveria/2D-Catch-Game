@@ -141,6 +141,8 @@ MonoBehaviour:
   timerText: {fileID: 330765201}
   gameOvertext: {fileID: 1054088039}
   restartButton: {fileID: 484333824}
+  splashScreen: {fileID: 1318904958}
+  startButton: {fileID: 386979566}
 --- !u!4 &46876613
 Transform:
   m_ObjectHideFlags: 0
@@ -360,8 +362,8 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.86764705, g: 0.80384946, b: 0.80384946, a: 1}
-    m_HighlightedColor: {r: 0.8455882, g: 0.32953072, b: 0.32953072, a: 1}
+    m_NormalColor: {r: 0.866, g: 0.809, b: 0.566, a: 1}
+    m_HighlightedColor: {r: 0.86764705, g: 0.45934257, b: 0.45934257, a: 1}
     m_PressedColor: {r: 0.4852941, g: 0.049956735, b: 0.049956735, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
