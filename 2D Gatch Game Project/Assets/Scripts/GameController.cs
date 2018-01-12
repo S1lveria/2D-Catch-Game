@@ -11,6 +11,8 @@ public class GameController : MonoBehaviour
 	public Text timerText;
 	public GameObject gameOvertext;
 	public GameObject restartButton;
+	public GameObject splashScreen;
+	public GameObject startButton;
 	private float maxWidth;
 
 	void Start ()
@@ -23,7 +25,6 @@ public class GameController : MonoBehaviour
 		Vector3 targetWidth = cam.ScreenToWorldPoint (upperCorner);
 		float ballWidth = ball.GetComponent<Renderer>().bounds.extents.x;
 		maxWidth = targetWidth.x - ballWidth;
-		StartCoroutine (Spawn());
 		UpdateText();
 	}
 
@@ -35,6 +36,13 @@ public class GameController : MonoBehaviour
 			timeLeft = 0;
 		}
 		UpdateText();
+	}
+
+	public void StartGame()
+	{
+		splashScreen.SetActive(false);
+		startButton.SetActive(false);
+		StartCoroutine (Spawn());
 	}
 	IEnumerator Spawn()
 	{
